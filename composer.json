@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dahovitech\\SmartCrudBundle\\": "src/"
+            "Dahovitech\\SmartCrudBundle\\": ""
         }
     },
     
@@ -39,6 +39,5 @@
         "lint": "phpcs src/ tests/ --standard=PSR12",
         "fix": "phpcbf src/ tests/ --standard=PSR12"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "minimum-stability": "dev"
 }
