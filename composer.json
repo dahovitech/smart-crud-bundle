@@ -12,8 +12,8 @@
     "require": {
         "php": "^8.0",
         "symfony/framework-bundle": ">= 6.*",
-        "doctrine/orm": "*",
-        "gedmo/doctrine-extensions": "*",
+        "doctrine/orm": "^2.10",
+        "gedmo/doctrine-extensions": "^3.10",
         "symfony/translation": "*",
         "symfony/security-bundle": "*",
         "symfony/form": "*",
@@ -30,14 +30,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Dahovitech\\SmartCrudBundle\\": ""
+            "Dahovitech\\SmartCrudBundle\\": "src/"
         }
     },
-    
     "scripts": {
         "test": "phpunit",
         "lint": "phpcs src/ tests/ --standard=PSR12",
         "fix": "phpcbf src/ tests/ --standard=PSR12"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
