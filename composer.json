@@ -20,12 +20,6 @@
         "symfony/validator": "^6.0 || ^7.0",
         "symfony/twig-bundle": "^6.0 || ^7.0"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/dahovitech/smart-crud-bundle.git"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Dahovitech\\SmartCrudBundle\\": "src/"
