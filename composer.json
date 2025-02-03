@@ -25,8 +25,7 @@
         "symfony/browser-kit": "^6.0 || ^7.0",
         "symfony/css-selector": "^6.0 || ^7.0",
         "symfony/dom-crawler": "^6.0 || ^7.0",
-        "symfony/maker-bundle": "^1.48",
-        "fakerphp/faker": "^1.21"
+        "symfony/maker-bundle": "^1.48"
     },
     "autoload": {
         "psr-4": {
