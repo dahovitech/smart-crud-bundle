@@ -33,11 +33,7 @@
             "Dahovitech\\SmartCrudBundle\\": "src/"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-main": "1.0-dev"
-        }
-    },
+    
     "scripts": {
         "test": "phpunit",
         "lint": "phpcs src/ tests/ --standard=PSR12",
