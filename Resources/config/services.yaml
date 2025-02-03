@@ -1,0 +1,12 @@
+services:
+      SmartCrudBundle\Service\CrudService:
+        arguments:
+          $entityManager: '@doctrine.orm.entity_manager'
+
+      SmartCrudBundle\Service\TranslationService:
+        arguments:
+          $entityManager: '@doctrine.orm.entity_manager'
+
+      SmartCrudBundle\Service\ApiService:
+        arguments:
+          $entityManager: '@doctrine.orm.entity_manager'

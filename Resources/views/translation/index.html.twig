@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+    {% block body %}
+      <h1>Traductions de {{ entityName }}</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Langue</th>
+            <th>Traduction</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for translation in translations %}
+            <tr>
+              <td>{{ translation.id }}</td>
+              <td>{{ translation.language }}</td>
+              <td>{{ translation.translation }}</td>
+              <td>
+                <a href="{{ path('app_translation_update', {'entityName': entityName, 'entityId': entityId, 'id': translation.id}) }}">Modifier</a>
+                <form action="{{ path('app_translation_delete', {'entityName': entityName, 'entityId': entityId, 'id': translation.id}) }}" method="post">
+                  <button type="submit">Supprimer</button>
+                </form>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+    {% block body %}
+      <h1>Liste des {{ entityName }}</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for entity in entities %}
+            <tr>
+              <td>{{ entity.id }}</td>
+              <td>{{ entity.name }}</td>
+              <td>
+                <a href="{{ path('app_crud_update', {'entityName': entityName, 'id': entity.id}) }}">Modifier</a>
+                <form action="{{ path('app_crud_delete', {'entityName': entityName, 'id': entity.id}) }}" method="post">
+                  <button type="submit">Supprimer</button>
+                </form>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endblock %}

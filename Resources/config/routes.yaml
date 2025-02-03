@@ -1,0 +1,9 @@
+app_crud_index:
+      path: /{entityName}
+      controller: SmartCrudBundle\Controller\CrudController::index
+      methods: [GET]
+
+    app_translation_index:
+      path: /{entityName}/{entityId}/translations
+      controller: SmartCrudBundle\Controller\TranslationController::index
+      methods: [GET]
