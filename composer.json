@@ -11,12 +11,26 @@
     ],
     "require": {
         "php": "^8.0",
-        "symfony/framework-bundle": "^6.0 || ^7.0"
+        "symfony/framework-bundle": "^6.0 || ^7.0",
+        "gedmo/doctrine-extensions": "^3.10",
+        "symfony/translation": "^6.0 || ^7.0",
+        "symfony/security-bundle": "^6.0 || ^7.0",
+        "symfony/form": "^6.0 || ^7.0",
+        "symfony/validator": "^6.0 || ^7.0",
+        "symfony/twig-bundle": "^6.0 || ^7.0"
     },
     "autoload": {
         "psr-4": {
             "Dahovitech\\SmartCrudBundle\\": "src/"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    },
+    "suggest": {
+        "doctrine/doctrine-bundle": "to use the ORM extensions"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
